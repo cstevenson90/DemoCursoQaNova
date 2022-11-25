@@ -10,10 +10,31 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    //implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.4.0'//ultima versión
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'//QANOVA
+    //testImplementation group: 'org.testng', name: 'testng', version: '7.6.1'//ULTIMA VERSIÓN
+   testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'//QANOVA
+   // implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.2'
+    implementation group: 'com.itextpdf', name: 'itextpdf', version: '5.5.13.3'
+    implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.1'
+    //implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
+    implementation group: 'javax.mail', name: 'mail', version: '1.4.7'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.9.1'
+    //implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+
+
+
+
+
+
+
+
+
+
 }
 
 test {
-    useJUnitPlatform()
+    useTestNG()
 }
